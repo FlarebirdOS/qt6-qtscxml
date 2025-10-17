@@ -1,6 +1,6 @@
 pkgname=qt6-qtscxml
-pkgver=6.9.2
-pkgrel=1
+pkgver=6.10.0
+pkgrel=2
 pkgdesc="Static and runtime integration of SCXML models into Qt6 code"
 arch=('x86_64')
 url="https://www.qt.io"
@@ -22,7 +22,7 @@ makedepends=(
     'qt6-qtdeclarative'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(dcfc567f4bbda7a291994df6724e41ffcdc35436bf2c00e084e57289d067c419)
+sha256sums=(20eee37aae93c1a4fdaac8ab9b22dd1d3f81a6cef361620d9ab0513b6154f7ae)
 
 build() {
     cd ${pkgname#*-}
